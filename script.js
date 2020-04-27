@@ -1,5 +1,5 @@
 function myFunc(){
-  var rockets = [
+  var people = [
     { name:'Sally', age:32 },
     { name:'Bob', age:23 },
     { name:'Jim', age:16 },
@@ -8,10 +8,10 @@ function myFunc(){
     { name:'James Munger', age:3 }
   ];
 
-  var theAdults = rockets.filter(adults => adults.age >= 18);
+  var theAdults = people.filter(adults => adults.age >= 18);
   
-  for(i=0;i<rockets.length;i++){
-    document.getElementById('array').innerHTML += rockets[i].name+" who is age "+rockets[i].age+"<br>"
+  for(i=0;i<people.length;i++){
+    document.getElementById('array').innerHTML += people[i].name+" who is age "+people[i].age+"<br>"
   }
 
   for(x=0;x<theAdults.length;x++){
